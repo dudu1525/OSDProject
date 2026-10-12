@@ -14,7 +14,7 @@
 #include "cal_atomic.h"
 #include "cal_assembly.h"
 #include "cal_seh.h"
-
+//dan thread branch
 #define TID_INCREMENT               4
 
 #define THREAD_TIME_SLICE           1
