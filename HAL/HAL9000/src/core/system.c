@@ -20,6 +20,7 @@
 #include "network_stack.h"
 #include "dmp_common.h"
 #include "ex_system.h"
+#include "ex_timer.h"
 #include "process_internal.h"
 #include "boot_module.h"
 #include "display.h"
@@ -65,6 +66,7 @@ SystemPreinit(
     BootModulesPreinit();
     DumpPreinit();
     ExEventSystemPreinit();
+    ExTimerSystemPreinit(); //GOG : Initializare Timer
     MutexSystemPreinit();
     ThreadSystemPreinit();
     printSystemPreinit(&displayInformation);
